@@ -1,0 +1,125 @@
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 0 40px;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    height: 400px;
+  }
+  
+  .footer-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .footer-left {
+    width: 50%;
+    padding-right: 90px;
+  }
+  
+  .footer-right {
+    width: 50%;
+    display: flex;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: block; 
+    padding-left: 0; 
+    margin-left: 0; 
+    padding-bottom: 0;
+  }
+  
+  .footer-section ul li:hover {
+    text-decoration: underline;
+  }
+  
+
+  .subscribe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .subscribe input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+  }
+  
+  .subscribe .btn {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .subscribe .btn:hover {
+    background-color: #e0356d;
+  }
+  
+ 
+  .footer-bottom {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    padding-top: 170px;
+    
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px; 
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 11px;
+  }
+  
+  .footer-links a:hover {
+    color: white;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+  
