@@ -1,64 +1,84 @@
 import React from "react";
-import "./Footer.css";
+import styles from "./tailwind";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className={styles.footer.container}>
+      <div className={styles.footer.flexFooter}>
         {/* Bên trái*/}
-        <div className="footer-left">
-          <div className="footer-section about">
+        <div className={styles.footer.leftSection}>
+          <div className={styles.footer.footerSection}>
             <h3>About Us</h3>
             <p>
               Welcome to our website, a wonderful place to explore and learn how
               to cook like a pro.
             </p>
-            <div className="subscribe">
-              <input type="email" placeholder="Enter your email" />
-              <button className="btn">Send</button>
+            <div className={styles.footer.emailBlock}>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className={styles.footer.emailInput}
+              />
+              <button className={styles.footer.sendButton}>Send</button>
             </div>
           </div>
 
-          
-          <div className="footer-bottom">
-            <div className="footer-logo">
-                <img src="download.png" alt="Logo" className="logo" />
-              <span className="logo-text">Chefify</span>
+          <div className={styles.footer.footerBottom}>
+            <div className={styles.footer.logoContainer}>
+              <img
+                src="download.png"
+                alt="Logo"
+                className={styles.footer.logoImage}
+              />
+              <span className="">Chefify</span>
             </div>
             <p>2023 Chefify Company</p>
-            <div className="footer-links">
-              <a href="#">Terms of Service</a>
-              <a href="#">Privacy Policy</a>
+            <div className={styles.footer.footerLinks}>
+              <a href="#" className={styles.footer.footerLink}>
+                Terms of Service
+              </a>
+              <a href="#" className={styles.footer.footerLink}>
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>
 
         {/* Bên phải */}
-        <div className="footer-right">
-          <div className="footer-section">
-            <h3>Learn More</h3>
-            <ul>
-              <li>Our Cooks</li>
-              <li>See Our Features</li>
-              <li>FAQ</li>
+        <div className={styles.footer.rightSection}>
+          <div className={styles.footer.footerSection}>
+            <h3 className={styles.footer.footerSectionh3}>Learn More</h3>
+            <ul className={styles.footer.footerSectionUl}>
+              <li className={styles.footer.footerSectionLi}>Our Cooks</li>
+              <li className={styles.footer.footerSectionLi}>
+                See Our Features
+              </li>
+              <li className={styles.footer.footerSectionLi}>FAQ</li>
             </ul>
-            <h3>Shop</h3>
-            <ul>
-              <li>Gift Subscription</li>
-              <li>Send Us Feedback</li>
+
+            <h3 className={styles.footer.footerSectionh3}>Shop</h3>
+            <ul className={styles.footer.footerSectionUl}>
+              <li className={styles.footer.footerSectionLi}>
+                Gift Subscription
+              </li>
+              <li className={styles.footer.footerSectionLi}>
+                Send Us Feedback
+              </li>
             </ul>
           </div>
 
-          <div className="footer-section">
-            <h3>Recipes</h3>
-            <ul>
-              <li>What to Cook This Week</li>
-              <li>Pasta</li>
-              <li>Dinner</li>
-              <li>Healthy</li>
-              <li>Vegetarian</li>
-              <li>Vegan</li>
-              <li>Christmas</li>
+          <div className={styles.footer.footerSection}>
+            <h3 className={styles.footer.footerSectionh3}>Recipes</h3>
+            <ul className={styles.footer.footerSectionUl}>
+              <li className={styles.footer.footerSectionLi}>
+                What to Cook This Week
+              </li>
+              <li className={styles.footer.footerSectionLi}>Pasta</li>
+              <li className={styles.footer.footerSectionLi}>Dinner</li>
+              <li className={styles.footer.footerSectionLi}>Healthy</li>
+              <li className={styles.footer.footerSectionLi}>Vegetarian</li>
+              <li className={styles.footer.footerSectionLi}>Vegan</li>
+              <li className={styles.footer.footerSectionLi}>Christmas</li>
             </ul>
           </div>
         </div>

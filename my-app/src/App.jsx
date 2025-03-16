@@ -6,6 +6,7 @@ import Footer from './footer'
 import Info from './info'
 import MenuItem from './menuItem'
 import Pagination from './Pagination'
+import Breadcrumb from './Breadcrumb'
 function App() {
   // const [data, setData] = useState(0)
 
@@ -81,7 +82,7 @@ function App() {
   return (
     <>
       <Header labels = {labels}></Header>
-      <div className='menucon'><h2>Home</h2> <span className='menucon'>{'>'}</span> <h2>Your Recipe Box</h2></div>
+      <Breadcrumb></Breadcrumb>
       <Info info={info}></Info>
       <MenuItem menuList={menuItem}></MenuItem>
       <Card items={items}></Card>

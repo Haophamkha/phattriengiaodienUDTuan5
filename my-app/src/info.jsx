@@ -1,20 +1,20 @@
 import React from "react";
-import "./info.css";
+import styles from "./tailwind";
 export default function Info({ info }) {
   return (
-    <div id="container">
-      <div id="header">
-        <h1>{info.name}</h1>
+    <div className={styles.profile.container}>
+      <div className={styles.profile.header}>
+        <h1 className={styles.profile.title}>{info.name}</h1>
       </div>
-      <div id="content">
-        <div id="leftC">
-          <img src={info.url} alt="" className="img" />
+      <div className={styles.profile.content}>
+        <div className={styles.profile.leftContent}>
+          <img src={info.url} alt="" className={styles.profile.image} />
         </div>
-        <div id="rightC">
-          <p>{info.description}</p>
-          <div className="sub-share">
-            <p id="pinkChu">{info.countSubscribers} Subscribes</p>
-            <button>Share</button>
+        <div className={styles.profile.rightContent}>
+          <p className={styles.profile.rightText}>{info.description}</p>
+          <div className={styles.profile.subShare}>
+            <p className={styles.profile.pinkText}>{info.countSubscribers} Subscribes</p>
+            <button className={styles.profile.button}>Share</button>
           </div>
         </div>
       </div>

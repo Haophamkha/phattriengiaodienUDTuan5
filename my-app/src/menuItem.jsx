@@ -1,14 +1,17 @@
 import React, {useState} from "react";
-import "./menuItem.css";
-export default function MenuItem({ menuList}) {
-    const [activeIndex, setActiveIndex] = useState(0);
-    return (
-        <div className="tabs-container">
-      <ul className="nav">
+import styles from "./tailwind";
+export default function MenuItem({ menuList }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  return (
+    <div className={styles.menuItem.tabsContainer}>
+      <ul className={styles.menuItem.nav}>
         {menuList.map((item, index) => (
           <li
             key={index}
-            className={`nav-item ${index === activeIndex ? "active" : ""}`}
+            className={`${styles.menuItem.navItem} ${
+              index === activeIndex ? styles.menuItem.activeNavItem : ""
+            }`}
             onClick={() => setActiveIndex(index)}
           >
             {item}
@@ -16,5 +19,5 @@ export default function MenuItem({ menuList}) {
         ))}
       </ul>
     </div>
-    );
+  );
 }
